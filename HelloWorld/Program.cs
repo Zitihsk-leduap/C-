@@ -6,10 +6,43 @@ using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.Marshalling;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
+
+
+
+class NameReturn{
+  public void Name(string fname, string lname, int age){
+    string nameOfthePerson=$"The person is{fname} {lname} and his age is{age}";
+    Console.WriteLine(nameOfthePerson);
+  }
+
+}
+
+
+class MathUtils{
+  public static int Add(int a,int b){
+    return a+b;
+  }
+}
 
 class Program
 {
+
+  static int PlusMethod(int x, int y){
+    return x+y;
+  }
+
+
+   public  void MyAnotherMethod(string name){
+          Console.WriteLine("My name is :"+name);
+          
+        }
+
+
+    static void func(string fname, int age=23){
+      Console.WriteLine(fname +" is"+age);  
+    }
   static void Main(string[] args)
   {
 
@@ -25,7 +58,7 @@ class Program
     // The main difference between write and writeline is that Write() doesnot insert a new line at the end of the output.
 
 
-    // Variables
+//     // Variables
 
 
 
@@ -147,8 +180,8 @@ Console.WriteLine("The Username is:"+userName);
   Concat() function concatenates the strings .This can be done by using the + opeator as well.
 
     String Interpolation:
-    This is the another option of string concatenation, which substitues the values of the variable into 
-    placeholders in a string.
+//     This is the another option of string concatenation, which substitues the values of the variable into 
+//     placeholders in a string.
 
 
     string firstName="Kshitiz";
@@ -175,10 +208,10 @@ Console.WriteLine("The Username is:"+userName);
     }
     else{
       Console.WriteLine("You are not aged enough to get married");
-    }
+//     }
 
 
-    Ternary Operator
+//     Ternary Operator
     This is also called short-hand if else because it consists of three operands.
 
           Syntax
@@ -289,5 +322,112 @@ Console.WriteLine("The Username is:"+userName);
 
       }
 
-  } 
+
+        Methods/Functions in C#;
+         
+         like we have made a function main in the program class and the
+         static parameter means the function belongs to the class itself not
+        the instances of the class Program.
+
+        better to use UpperCase for the method Name
+
+
+        for example:
+
+       
+        static void MyMethod(){
+          Console.WriteLine("I am here and yes this is it.");
+
+        }
+        MyMethod();
+  }
+
+
+
+        Parameters and arguements in Methods
+       
+        Program program= new Program();
+        program.MyAnotherMethod("KshitizPaudel");
+
+
+
+     In c#,you cannot call a method directly in the class scope outside a method.
+    Method calls need to be placed inside a method or a constructor.
+    But if you want to avoid creating an instance ,you can modify the method as follows:
+      
+      
+      using System;
+
+class Program
+{
+    public static void MyAnotherMethod(string name)
+    {
+        Console.WriteLine("My name is: " + name);
+    }
+
+    static void Main(string[] args)
+    {
+        MyAnotherMethod("KshitizPaudel"); // Direct call to the static method
+    }
 }
+
+
+    Multiple parameters;
+  func("Kshitiz",20);
+  func("VivianRichards",25);
+  func("GulshanJha");
+
+
+  Default Parameters:
+  We can use the default parameter value ,by using the equal sign(=) like we have done above for Gulshan Jha
+
+
+  static in functions and other parts:
+
+  In the Context of a Function:
+When you declare a method as static, it means:
+
+Belongs to the Class, Not an Instance:
+
+The method can be called without creating an instance of the class.
+   
+  int result= MathUtils.Add(5,2);
+  Console.WriteLine(result);
+
+
+
+
+  Cannot Access Instance Members Directly:
+
+A static method cannot directly access non-static fields, methods, or properties of the class because it does not operate on an instance.
+
+
+
+  Return Values:done above
+
+  NameReturn namereturn=new NameReturn();
+  namereturn.Name("Zitihsk","Leduap",20);
+
+
+
+  if the static method needs to call non-static,then the instance of the class must be created to provoke them.
+  
+
+
+  Method Overloading
+  With method overloading ,multiple methods can have the same name with different parameters.
+
+  example:
+
+     int MyMethod(int x);
+     float MyMethod(int x,float y);
+     double MyMethod(double x, double y);
+
+   int answer=PlusMethod(10,20);
+   Console.WriteLine(answer);
+
+
+  }
+  
+}
+
