@@ -1,0 +1,15 @@
+C:\Users\kshit\Desktop\C#\file\bin\Debug\net9.0\file.exe
+C:\Users\kshit\Desktop\C#\file\bin\Debug\net9.0\file.deps.json
+C:\Users\kshit\Desktop\C#\file\bin\Debug\net9.0\file.runtimeconfig.json
+C:\Users\kshit\Desktop\C#\file\bin\Debug\net9.0\file.dll
+C:\Users\kshit\Desktop\C#\file\bin\Debug\net9.0\file.pdb
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.AssemblyInfoInputs.cache
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.AssemblyInfo.cs
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.csproj.CoreCompileInputs.cache
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.sourcelink.json
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.dll
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\refint\file.dll
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.pdb
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\file.genruntimeconfig.cache
+C:\Users\kshit\Desktop\C#\file\obj\Debug\net9.0\ref\file.dll
